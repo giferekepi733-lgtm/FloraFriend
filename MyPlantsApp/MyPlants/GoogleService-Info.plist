@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCMRTu8oe0-m6KpuQ-veaGfueblI6kOUCU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>403944528494</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.MyGardenGuru</string>
+	<key>PROJECT_ID</key>
+	<string>chikora-friend</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chikora-friend.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:403944528494:ios:f8b99e020188618edaa47f</string>
+	<key>DATABASE_URL</key>
+	<string>https://chikora-friend-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

@@ -44,6 +44,17 @@
 		646D931F2EB0F70B00E296DA /* HumidityCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D931E2EB0F70B00E296DA /* HumidityCalculatorView.swift */; };
 		646D93212EB0F91800E296DA /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D93202EB0F91800E296DA /* SettingsViewModel.swift */; };
 		646D93232EB1036E00E296DA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646D93222EB1036E00E296DA /* RootView.swift */; };
+		6484AA8C2ED5FDCB0091B6CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6484AA8B2ED5FDCB0091B6CF /* GoogleService-Info.plist */; };
+		648FB31B2ED5F93100DF9702 /* AdServicesTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648FB31A2ED5F93100DF9702 /* AdServicesTokenProvider.swift */; };
+		648FB31D2ED5F93A00DF9702 /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648FB31C2ED5F93A00DF9702 /* CustomWebView.swift */; };
+		648FB31F2ED5F93F00DF9702 /* FirebaseLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648FB31E2ED5F93F00DF9702 /* FirebaseLogger.swift */; };
+		648FB3212ED5F94500DF9702 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648FB3202ED5F94500DF9702 /* LaunchViewController.swift */; };
+		648FB3232ED5F94A00DF9702 /* StartGateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648FB3222ED5F94A00DF9702 /* StartGateService.swift */; };
+		648FB3252ED5F95000DF9702 /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648FB3242ED5F95000DF9702 /* TokenStore.swift */; };
+		648FB3282ED5F96A00DF9702 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 648FB3272ED5F96A00DF9702 /* AppsFlyerLib */; };
+		648FB32B2ED5F9FF00DF9702 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 648FB32A2ED5F9FF00DF9702 /* FirebaseCore */; };
+		648FB32D2ED5F9FF00DF9702 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 648FB32C2ED5F9FF00DF9702 /* FirebaseDatabase */; };
+		648FB32F2ED5F9FF00DF9702 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 648FB32E2ED5F9FF00DF9702 /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,6 +109,14 @@
 		646D931E2EB0F70B00E296DA /* HumidityCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityCalculatorView.swift; sourceTree = "<group>"; };
 		646D93202EB0F91800E296DA /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		646D93222EB1036E00E296DA /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		6484AA8B2ED5FDCB0091B6CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6484AA8D2ED5FDF40091B6CF /* MyPlantsApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyPlantsApp.entitlements; sourceTree = "<group>"; };
+		648FB31A2ED5F93100DF9702 /* AdServicesTokenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdServicesTokenProvider.swift; sourceTree = "<group>"; };
+		648FB31C2ED5F93A00DF9702 /* CustomWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
+		648FB31E2ED5F93F00DF9702 /* FirebaseLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogger.swift; sourceTree = "<group>"; };
+		648FB3202ED5F94500DF9702 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		648FB3222ED5F94A00DF9702 /* StartGateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGateService.swift; sourceTree = "<group>"; };
+		648FB3242ED5F95000DF9702 /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +125,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				646D92F52EB0E5DD00E296DA /* RealmSwift in Frameworks */,
+				648FB32B2ED5F9FF00DF9702 /* FirebaseCore in Frameworks */,
+				648FB32F2ED5F9FF00DF9702 /* FirebaseMessaging in Frameworks */,
+				648FB32D2ED5F9FF00DF9702 /* FirebaseDatabase in Frameworks */,
+				648FB3282ED5F96A00DF9702 /* AppsFlyerLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +154,7 @@
 		646D92DB2EB0E23200E296DA /* MyPlantsApp */ = {
 			isa = PBXGroup;
 			children = (
+				6484AA8D2ED5FDF40091B6CF /* MyPlantsApp.entitlements */,
 				646D92E42EB0E30900E296DA /* MyPlants */,
 				646D92E32EB0E30200E296DA /* AppDelegate */,
 				646D92D32EB0E23200E296DA /* Assets.xcassets */,
@@ -154,6 +178,7 @@
 		646D92E42EB0E30900E296DA /* MyPlants */ = {
 			isa = PBXGroup;
 			children = (
+				648FB3192ED5F92700DF9702 /* Policy */,
 				646D92E92EB0E45C00E296DA /* ContentView.swift */,
 				646D93222EB1036E00E296DA /* RootView.swift */,
 				646D92FA2EB0E7DD00E296DA /* GeminiService.swift */,
@@ -183,8 +208,22 @@
 				646D931A2EB0F25600E296DA /* NotificationManager.swift */,
 				646D931C2EB0F62300E296DA /* CareCalculator.swift */,
 				646D931E2EB0F70B00E296DA /* HumidityCalculatorView.swift */,
+				6484AA8B2ED5FDCB0091B6CF /* GoogleService-Info.plist */,
 			);
 			path = MyPlants;
+			sourceTree = "<group>";
+		};
+		648FB3192ED5F92700DF9702 /* Policy */ = {
+			isa = PBXGroup;
+			children = (
+				648FB31A2ED5F93100DF9702 /* AdServicesTokenProvider.swift */,
+				648FB31C2ED5F93A00DF9702 /* CustomWebView.swift */,
+				648FB31E2ED5F93F00DF9702 /* FirebaseLogger.swift */,
+				648FB3202ED5F94500DF9702 /* LaunchViewController.swift */,
+				648FB3222ED5F94A00DF9702 /* StartGateService.swift */,
+				648FB3242ED5F95000DF9702 /* TokenStore.swift */,
+			);
+			path = Policy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +245,10 @@
 			name = MyPlantsApp;
 			packageProductDependencies = (
 				646D92F42EB0E5DD00E296DA /* RealmSwift */,
+				648FB3272ED5F96A00DF9702 /* AppsFlyerLib */,
+				648FB32A2ED5F9FF00DF9702 /* FirebaseCore */,
+				648FB32C2ED5F9FF00DF9702 /* FirebaseDatabase */,
+				648FB32E2ED5F9FF00DF9702 /* FirebaseMessaging */,
 			);
 			productName = MyPlantsApp;
 			productReference = 646D92BA2EB0E22600E296DA /* MyPlantsApp.app */;
@@ -237,6 +280,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				646D92F32EB0E5DD00E296DA /* XCRemoteSwiftPackageReference "realm-swift" */,
+				648FB3262ED5F96A00DF9702 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				648FB3292ED5F9FF00DF9702 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 646D92BB2EB0E22600E296DA /* Products */;
@@ -254,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				646D92DC2EB0E23200E296DA /* Assets.xcassets in Resources */,
+				6484AA8C2ED5FDCB0091B6CF /* GoogleService-Info.plist in Resources */,
 				646D92DE2EB0E23200E296DA /* LaunchScreen.storyboard in Resources */,
 				646D92DF2EB0E23200E296DA /* Main.storyboard in Resources */,
 			);
@@ -266,18 +312,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				648FB31D2ED5F93A00DF9702 /* CustomWebView.swift in Sources */,
 				646D92FD2EB0E81D00E296DA /* ImagePicker.swift in Sources */,
 				646D92E02EB0E23200E296DA /* AppDelegate.swift in Sources */,
 				646D92E12EB0E23200E296DA /* SceneDelegate.swift in Sources */,
+				648FB31B2ED5F93100DF9702 /* AdServicesTokenProvider.swift in Sources */,
 				646D92F92EB0E61100E296DA /* RealmManager.swift in Sources */,
 				646D93192EB0F14200E296DA /* PlantDetailView.swift in Sources */,
+				648FB3212ED5F94500DF9702 /* LaunchViewController.swift in Sources */,
+				648FB3232ED5F94A00DF9702 /* StartGateService.swift in Sources */,
 				646D931F2EB0F70B00E296DA /* HumidityCalculatorView.swift in Sources */,
 				646D931D2EB0F62300E296DA /* CareCalculator.swift in Sources */,
 				646D92EE2EB0E4DF00E296DA /* PlantCardView.swift in Sources */,
+				648FB31F2ED5F93F00DF9702 /* FirebaseLogger.swift in Sources */,
 				646D93232EB1036E00E296DA /* RootView.swift in Sources */,
 				646D93072EB0EBFD00E296DA /* ScheduleView.swift in Sources */,
 				646D93132EB0EDDC00E296DA /* ProfileViewModel.swift in Sources */,
 				646D93152EB0EDEB00E296DA /* ProfileView.swift in Sources */,
+				648FB3252ED5F95000DF9702 /* TokenStore.swift in Sources */,
 				646D92FB2EB0E7DD00E296DA /* GeminiService.swift in Sources */,
 				646D92EA2EB0E45C00E296DA /* ContentView.swift in Sources */,
 				646D92F02EB0E4EB00E296DA /* MyPlantsView.swift in Sources */,
@@ -328,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyPlantsApp/MyPlantsApp.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -335,9 +388,12 @@
 				INFOPLIST_FILE = MyPlantsApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Flora Friend";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs access to your camera so you can recognize your plants.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The app needs access to your microphone so you can save your plants.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Photo Library write access is required to save media.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library access is required to pick media.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Tracking is used to deliver a better, more relevant experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
@@ -365,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MyPlantsApp/MyPlantsApp.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
@@ -372,9 +429,12 @@
 				INFOPLIST_FILE = MyPlantsApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Flora Friend";
 				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs access to your camera so you can recognize your plants.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "The app needs access to your microphone so you can save your plants.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Photo Library write access is required to save media.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Photo Library access is required to pick media.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Tracking is used to deliver a better, more relevant experience.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
@@ -550,6 +610,22 @@
 				kind = branch;
 			};
 		};
+		648FB3262ED5F96A00DF9702 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.7;
+			};
+		};
+		648FB3292ED5F9FF00DF9702 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -557,6 +633,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 646D92F32EB0E5DD00E296DA /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		648FB3272ED5F96A00DF9702 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 648FB3262ED5F96A00DF9702 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		648FB32A2ED5F9FF00DF9702 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 648FB3292ED5F9FF00DF9702 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		648FB32C2ED5F9FF00DF9702 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 648FB3292ED5F9FF00DF9702 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		648FB32E2ED5F9FF00DF9702 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 648FB3292ED5F9FF00DF9702 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
