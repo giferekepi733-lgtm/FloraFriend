@@ -17,14 +17,18 @@ struct MyPlantsView: View {
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(viewModel.plants) { plant in
                             // Передаем в детальный View замыкание onDelete
-                            NavigationLink(destination:
-                                PlantDetailView(plant: plant, onDelete: {
+                            if #available(iOS 17.0, *) {
+                                NavigationLink(destination:
+                                                PlantDetailView(plant: plant, onDelete: {
                                     // Этот код выполнится, когда пользователь подтвердит удаление
-                                viewModel.deletePlant(withId: plant.id)
-
+                                    viewModel.deletePlant(withId: plant.id)
+                                    
                                 })
-                            ) {
-                                PlantCardView(plant: plant)
+                                ) {
+                                    PlantCardView(plant: plant)
+                                }
+                            } else {
+                                // Fallback on earlier versions
                             }
                         }
                     }

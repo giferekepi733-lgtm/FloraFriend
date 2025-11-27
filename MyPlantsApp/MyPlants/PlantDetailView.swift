@@ -1,6 +1,7 @@
 import SwiftUI
 import RealmSwift
 
+@available(iOS 17.0, *)
 struct PlantDetailView: View {
     // Получаем живой объект от родительского View
     @ObservedRealmObject var plant: Plant

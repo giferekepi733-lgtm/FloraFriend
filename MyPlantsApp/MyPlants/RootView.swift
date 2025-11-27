@@ -79,8 +79,12 @@ struct OnboardingView: View {
             // TabView для свайпа между страницами
             TabView(selection: $currentPage) {
                 ForEach(pages.indices, id: \.self) { index in
-                    OnboardingPageView(info: pages[index])
-                        .tag(index)
+                    if #available(iOS 16.0, *) {
+                        OnboardingPageView(info: pages[index])
+                            .tag(index)
+                    } else {
+                        // Fallback on earlier versions
+                    }
                 }
             }
             .tabViewStyle(PageTabViewStyle()) // Стиль с точками-индикаторами
@@ -115,6 +119,7 @@ struct OnboardingView: View {
 }
 
 // Переиспользуемый View для отображения контента одной страницы
+@available(iOS 16.0, *)
 struct OnboardingPageView: View {
     let info: OnboardingPageInfo
     

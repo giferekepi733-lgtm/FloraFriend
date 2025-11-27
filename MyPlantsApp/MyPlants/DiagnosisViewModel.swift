@@ -32,6 +32,7 @@ class DiagnosisViewModel: ObservableObject {
 }
 
 // MARK: - View
+@available(iOS 17.0, *)
 struct DiagnosisView: View {
     @StateObject private var viewModel = DiagnosisViewModel()
     @State private var isShowingImagePicker = false

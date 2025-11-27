@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 17.0, *)
 struct ToolsView: View {
     @State private var isShowingAddPlantSheet = false
     
@@ -37,8 +38,4 @@ struct ToolsView: View {
             }
         }
     }
-}
-
-#Preview {
-    ToolsView()
 }

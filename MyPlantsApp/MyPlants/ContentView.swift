@@ -23,10 +23,14 @@ struct ContentView: View {
                 }
                 
 
-            ToolsView() // Замените Text("Tools Screen")
-                .tabItem {
-                    Label("Tools", systemImage: "wrench.and.screwdriver.fill")
-                }
+            if #available(iOS 17.0, *) {
+                ToolsView() // Замените Text("Tools Screen")
+                    .tabItem {
+                        Label("Tools", systemImage: "wrench.and.screwdriver.fill")
+                    }
+            } else {
+                // Fallback on earlier versions
+            }
 
             ProfileView() // Замените Text("Profile Screen")
                 .tabItem {
